@@ -1,0 +1,29 @@
+Tester:     weka.experiment.PairedCorrectedTTester -G 4,5,6 -D 1 -R 2 -S 0.05 -result-matrix "weka.experiment.ResultMatrixPlainText -mean-prec 2 -stddev-prec 2 -col-name-width 0 -row-name-width 25 -mean-width 0 -stddev-width 0 -sig-width 0 -count-width 5 -print-col-names -print-row-names -enum-col-names"
+Analysing:  Percent_correct
+Datasets:   4
+Resultsets: 8
+Confidence: 0.05 (two tailed)
+Sorted by:  -
+Date:       14/3/17 12:41 AM
+
+
+Dataset                   (1) rules.Ze | (2) bayes (3) funct (4) funct (5) rules (6) trees (7) trees (8) lazy.
+--------------------------------------------------------------------------------------------------------------
+pima_diabetes            (100)   65.11 |   75.75 v   77.47 v   76.80 v   73.45 v   74.49 v   74.46 v   73.86 v
+pima_diabetes-weka.filter(100)   65.11 |   75.77 v   77.47 v   76.80 v   73.45 v   74.49 v   74.42 v   73.86 v
+pima_diabetes-weka.filter(100)   65.11 |   75.65 v   77.47 v   76.81 v   73.45 v   74.49 v   74.39 v   73.86 v
+pima_diabetes-weka.filter(100)   65.11 |   74.81 v   76.86 v   76.30 v   73.03 v   74.69 v   73.70 v   73.54 v
+--------------------------------------------------------------------------------------------------------------
+                               (v/ /*) |   (4/0/0)   (4/0/0)   (4/0/0)   (4/0/0)   (4/0/0)   (4/0/0)   (4/0/0)
+
+
+Key:
+(1) rules.ZeroR '' 48055541465867954
+(2) bayes.NaiveBayes '' 5995231201785697655
+(3) functions.Logistic '-R 1.0E-8 -M -1 -num-decimal-places 4' 3932117032546553727
+(4) functions.SMO '-C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K \"functions.supportVector.PolyKernel -E 1.0 -C 250007\" -calibrator \"functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4\"' -6585883636378691736
+(5) rules.PART '-M 2 -C 0.25 -Q 1' 8121455039782598361
+(6) trees.J48 '-C 0.25 -M 2' -217733168393644444
+(7) trees.REPTree '-M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0' -9216785998198681299
+(8) lazy.IBk '-K 3 -W 0 -A \"weka.core.neighboursearch.LinearNNSearch -A \\\"weka.core.EuclideanDistance -R first-last\\\"\"' -3080186098777067172
+

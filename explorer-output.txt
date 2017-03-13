@@ -1,0 +1,79 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     pima_diabetes
+Instances:    768
+Attributes:   9
+              preg
+              plas
+              pres
+              skin
+              insu
+              mass
+              pedi
+              age
+              class
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                       Class
+Variable     tested_negative
+============================
+preg                 -0.1232
+plas                 -0.0352
+pres                  0.0133
+skin                 -0.0006
+insu                  0.0012
+mass                 -0.0897
+pedi                 -0.9452
+age                  -0.0149
+Intercept             8.4047
+
+
+Odds Ratios...
+                       Class
+Variable     tested_negative
+============================
+preg                  0.8841
+plas                  0.9654
+pres                  1.0134
+skin                  0.9994
+insu                  1.0012
+mass                  0.9142
+pedi                  0.3886
+age                   0.9852
+
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         601               78.2552 %
+Incorrectly Classified Instances       167               21.7448 %
+Kappa statistic                          0.4966
+Mean absolute error                      0.3063
+Root mean squared error                  0.3908
+Relative absolute error                 67.3928 %
+Root relative squared error             81.9907 %
+Total Number of Instances              768     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.890    0.418    0.799      0.890    0.842      0.504    0.839     0.897     tested_negative
+                 0.582    0.110    0.739      0.582    0.651      0.504    0.839     0.730     tested_positive
+Weighted Avg.    0.783    0.310    0.778      0.783    0.775      0.504    0.839     0.839     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 445  55 |   a = tested_negative
+ 112 156 |   b = tested_positive
+
